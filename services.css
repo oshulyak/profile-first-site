@@ -1,0 +1,101 @@
+/* Services Page Specific Styles */
+
+.page-header {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 3rem 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.page-header h1 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.service-item {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.service-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.service-image {
+    flex: 1;
+    height: 250px;
+    background-color: #ddd;
+    /* Placeholder color */
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #aaa;
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-content {
+    flex: 1.5;
+}
+
+.service-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.service-content p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.service-content ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.book-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: var(--accent-color);
+    color: var(--white);
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.book-btn:hover {
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+
+    .service-item,
+    .service-item:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .service-image {
+        width: 100%;
+        height: 200px;
+    }
+}
