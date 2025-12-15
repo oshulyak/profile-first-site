@@ -4,10 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Услуги - Гармония и Релакс</title>
+    <title>Услуги - Константин Тимохин</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="services.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        .page-header {
+            background-color: var(--light-bg);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: var(--radius);
+            padding: 2rem;
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            box-shadow: var(--shadow);
+            transform: translateY(-5px);
+            border-color: var(--secondary-color);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .service-card ul {
+            list-style: none;
+            margin: 1.5rem 0;
+            padding: 0;
+        }
+
+        .service-card li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .service-card li::before {
+            content: '•';
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,9 +72,11 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo">Гармония</div>
+                <div class="logo">Константин Тимохин</div>
                 <ul class="nav-links">
                     <li><a href="index.html">Главная</a></li>
+                    <li><a href="types.html">Виды массажа</a></li>
+                    <li><a href="training.html">Обучение</a></li>
                     <li><a href="services.html" class="active">Услуги</a></li>
                     <li><a href="prices.html">Цены</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
@@ -28,71 +87,58 @@
 
     <div class="page-header">
         <div class="container">
-            <h1>Наши Услуги</h1>
-            <p>Выберите идеальный вид массажа для вашего тела и души</p>
+            <h1>Услуги</h1>
+            <p>Выберите идеальную терапию для души и тела</p>
         </div>
     </div>
 
-    <div class="container services-list">
+    <div class="container services-grid">
 
-        <div class="service-item">
-            <div class="service-image">
-                <!-- Placeholder for Image -->
-                <span>💆‍♀️</span>
-            </div>
-            <div class="service-content">
-                <h3>Расслабляющий массаж</h3>
-                <p>Мягкая техника, направленная на снятие стресса и психоэмоционального напряжения. Идеально подходит
-                    после тяжелой рабочей недели.</p>
-                <ul>
-                    <li>Снимает усталость</li>
-                    <li>Улучшает сон</li>
-                    <li>Повышает настроение</li>
-                </ul>
-                <a href="contacts.html" class="book-btn">Записаться</a>
-            </div>
+        <div class="service-card">
+            <span class="service-icon">🙌</span>
+            <h3>Интегративная работа с телом</h3>
+            <p>Мой авторский сеанс, адаптированный под ваши нужды. Сочетает остеопатию, глубокий массаж и
+                телесно-ориентированную терапию для устранения первопричин боли.</p>
+            <ul>
+                <li>Глубокое снятие напряжения</li>
+                <li>Структурное выравнивание</li>
+                <li>Эмоциональный баланс</li>
+            </ul>
+            <a href="prices.html" class="btn">Посмотреть цены</a>
         </div>
 
-        <div class="service-item">
-            <div class="service-image">
-                <span>💪</span>
-            </div>
-            <div class="service-content">
-                <h3>Спортивный массаж</h3>
-                <p>Глубокая проработка мышц, необходимая спортсменам и людям с активным образом жизни. Помогает
-                    восстановиться после тренировок.</p>
-                <ul>
-                    <li>Снимает мышечные спазмы</li>
-                    <li>Улучшает подвижность суставов</li>
-                    <li>Предотвращает травмы</li>
-                </ul>
-                <a href="contacts.html" class="book-btn">Записаться</a>
-            </div>
+        <div class="service-card">
+            <span class="service-icon">🦴</span>
+            <h3>Остеопатическая коррекция</h3>
+            <p>Мягкая мануальная работа с фокусом на костной системе, краниальном ритме и внутренних органах для
+                восстановления естественной способности тела к самоисцелению.</p>
+            <ul>
+                <li>Облегчение хронической боли</li>
+                <li>Коррекция осанки</li>
+                <li>Снятие мигреней и головных болей</li>
+            </ul>
+            <a href="prices.html" class="btn">Посмотреть цены</a>
         </div>
 
-        <div class="service-item">
-            <div class="service-image">
-                <span>🌿</span>
-            </div>
-            <div class="service-content">
-                <h3>Лимфодренажный массаж</h3>
-                <p>Техника, стимулирующая циркуляцию лимфы. Эффективно борется с отеками и выводит токсины из организма.
-                </p>
-                <ul>
-                    <li>Уменьшает отечность</li>
-                    <li>Корректирует фигуру</li>
-                    <li>Укрепляет иммунитет</li>
-                </ul>
-                <a href="contacts.html" class="book-btn">Записаться</a>
-            </div>
+        <div class="service-card">
+            <span class="service-icon">🌿</span>
+            <h3>Классический лечебный массаж</h3>
+            <p>Традиционная мануальная терапия для улучшения кровообращения, расслабления мышц и восстановления после
+                физических нагрузок или стресса.</p>
+            <ul>
+                <li>Восстановление мышц</li>
+                <li>Снижение стресса</li>
+                <li>Улучшение кровообращения</li>
+            </ul>
+            <a href="prices.html" class="btn">Посмотреть цены</a>
         </div>
 
     </div>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Массажный кабинет "Гармония". Все права защищены.</p>
-            <p>Работаем ежедневно с 10:00 до 21:00</p>
+            <p>&copy; 2025 Константин Тимохин. Все права защищены.</p>
+            <p>Профессиональный Массаж и Телесная Терапия</p>
         </div>
     </footer>
 

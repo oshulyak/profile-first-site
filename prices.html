@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Цены - Гармония и Релакс</title>
+    <title>Цены - Константин Тимохин</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="prices.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,9 +17,11 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo">Гармония</div>
+                <div class="logo">Константин Тимохин</div>
                 <ul class="nav-links">
                     <li><a href="index.html">Главная</a></li>
+                    <li><a href="types.html">Виды массажа</a></li>
+                    <li><a href="training.html">Обучение</a></li>
                     <li><a href="services.html">Услуги</a></li>
                     <li><a href="prices.html" class="active">Цены</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
@@ -26,73 +30,162 @@
         </div>
     </header>
 
-    <div class="intro">
-        <div class="container">
-            <h1>Прайс-лист</h1>
-            <p>Доступные цены на качественный массаж</p>
-        </div>
-    </div>
+    <div class="instagram-feed-container">
 
-    <div class="container pricing-table">
-
-        <h2 class="section-title">Массаж тела</h2>
-
-        <div class="price-row">
-            <div class="price-info">
-                <h3>Расслабляющий массаж</h3>
-                <span class="price-duration">60 мин / 90 мин</span>
-            </div>
-            <div class="price-value">2500 ₽ / 3500 ₽</div>
+        <!-- Card 1: Header -->
+        <div class="price-card header-card">
+            <h1>Прайс-лист на массажные и оздоровительные услуги</h1>
         </div>
 
-        <div class="price-row featured">
-            <div class="price-info">
-                <h3>Спортивный массаж</h3>
-                <span class="price-duration">60 мин</span>
+        <!-- Card 2: Individual Services -->
+        <div class="price-card">
+            <h2 class="card-title">Индивидуальные услуги</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <div class="service-info">💆 Классический массаж <span class="time">60 мин</span></div>
+                    <div class="service-price">20 000 тг</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">💆 Классический массаж <span class="time">90 мин</span></div>
+                    <div class="service-price">25 000 тг</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">✨ Точечный массаж <span class="time">15 мин</span></div>
+                    <div class="service-price">5 000 тг</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">👐 Остеопатическая коррекция <span class="time">30 мин</span></div>
+                    <div class="service-price">15 000 тг</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">🌿 Висцеральный массаж <span class="time">45–60 мин</span></div>
+                    <div class="service-price">25 000 тг</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">🔬 Прикладная кинезиология <span class="time">20 мин</span></div>
+                    <div class="service-price">12 000 тг</div>
+                </div>
             </div>
-            <div class="price-value">3000 ₽</div>
         </div>
 
-        <div class="price-row">
-            <div class="price-info">
-                <h3>Лимфодренажный массаж</h3>
-                <span class="price-duration">60 мин</span>
+        <!-- Card 3: Classical Massage Packages -->
+        <div class="price-card">
+            <h2 class="card-title">Пакеты классического массажа</h2>
+
+            <div class="package-block">
+                <h3 class="package-heading">60 минут:</h3>
+                <div class="package-list">
+                    <div class="package-item">
+                        <span>3 сеанса</span>
+                        <span class="package-price">57 000 тг</span>
+                    </div>
+                    <div class="package-item">
+                        <span>5 сеансов</span>
+                        <span class="package-price">90 000 тг</span>
+                    </div>
+                    <div class="package-item">
+                        <span>7 сеансов</span>
+                        <span class="package-price">119 000 тг</span>
+                    </div>
+                    <div class="package-item">
+                        <span>10 сеансов</span>
+                        <span class="package-price">160 000 тг</span>
+                    </div>
+                </div>
             </div>
-            <div class="price-value">2800 ₽</div>
+
+            <div class="divider"></div>
+
+            <div class="package-block">
+                <h3 class="package-heading">90 минут:</h3>
+                <div class="package-list">
+                    <div class="package-item">
+                        <span>3 сеанса</span>
+                        <span class="package-price">71 000 тг</span>
+                    </div>
+                    <div class="package-item">
+                        <span>5 сеансов</span>
+                        <span class="package-price">113 000 тг</span>
+                    </div>
+                    <div class="package-item">
+                        <span>7 сеансов</span>
+                        <span class="package-price">149 000 тг</span>
+                    </div>
+                    <div class="package-item">
+                        <span>10 сеансов</span>
+                        <span class="package-price">200 000 тг</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="price-row">
-            <div class="price-info">
-                <h3>Массаж спины и шеи</h3>
-                <span class="price-duration">30 мин</span>
+        <!-- Card 4: Complex Programs -->
+        <div class="price-card">
+            <h2 class="card-title">Комплексные программы</h2>
+            <div class="service-list complex-list">
+                <div class="service-item">
+                    <div class="service-info">💆 Классика (60 мин) + Висцеральный массаж</div>
+                    <div class="service-price">45 000 тг</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">💆 Классика (90 мин) + Остеопатическая коррекция</div>
+                    <div class="service-price">40 000 тг</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">💆 Классика (60 мин) + Прикладная кинезиология</div>
+                    <div class="service-price">32 000 тг</div>
+                </div>
             </div>
-            <div class="price-value">1500 ₽</div>
         </div>
 
-        <h2 class="section-title">СПА программы</h2>
+        <!-- Card 5: Complex Program Packages -->
+        <div class="price-card">
+            <h2 class="card-title">Пакеты комплексных программ</h2>
 
-        <div class="price-row">
-            <div class="price-info">
-                <h3>Ароматерапия + Массаж</h3>
-                <span class="price-duration">90 мин</span>
+            <div class="package-block">
+                <h3 class="package-heading">Классика + Висцеральный:</h3>
+                <div class="package-list">
+                    <div class="package-item"><span>3 сеанса</span> <span class="package-price">128 000 тг</span></div>
+                    <div class="package-item"><span>5 сеансов</span> <span class="package-price">203 000 тг</span></div>
+                    <div class="package-item"><span>7 сеансов</span> <span class="package-price">268 000 тг</span></div>
+                    <div class="package-item"><span>10 сеансов</span> <span class="package-price">360 000 тг</span>
+                    </div>
+                </div>
             </div>
-            <div class="price-value">4000 ₽</div>
-        </div>
 
-        <div class="price-row">
-            <div class="price-info">
-                <h3>Шоколадное обертывание</h3>
-                <span class="price-duration">120 мин</span>
+            <div class="divider"></div>
+
+            <div class="package-block">
+                <h3 class="package-heading">Классика + Остео:</h3>
+                <div class="package-list">
+                    <div class="package-item"><span>3 сеанса</span> <span class="package-price">114 000 тг</span></div>
+                    <div class="package-item"><span>5 сеансов</span> <span class="package-price">180 000 тг</span></div>
+                    <div class="package-item"><span>7 сеансов</span> <span class="package-price">238 000 тг</span></div>
+                    <div class="package-item"><span>10 сеансов</span> <span class="package-price">320 000 тг</span>
+                    </div>
+                </div>
             </div>
-            <div class="price-value">5500 ₽</div>
+
+            <div class="divider"></div>
+
+            <div class="package-block">
+                <h3 class="package-heading">Классика + Кинезиология:</h3>
+                <div class="package-list">
+                    <div class="package-item"><span>3 сеанса</span> <span class="package-price">91 000 тг</span></div>
+                    <div class="package-item"><span>5 сеансов</span> <span class="package-price">145 000 тг</span></div>
+                    <div class="package-item"><span>7 сеансов</span> <span class="package-price">191 000 тг</span></div>
+                    <div class="package-item"><span>10 сеансов</span> <span class="package-price">256 000 тг</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Массажный кабинет "Гармония". Все права защищены.</p>
-            <p>Работаем ежедневно с 10:00 до 21:00</p>
+            <p>&copy; 2025 Константин Тимохин. Все права защищены.</p>
+            <p>Профессиональный Массаж и Телесная Терапия</p>
         </div>
     </footer>
 

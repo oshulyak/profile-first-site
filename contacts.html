@@ -4,10 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты - Гармония и Релакс</title>
+    <title>Контакты - Константин Тимохин</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="contacts.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .info-item {
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: var(--radius);
+            font-family: inherit;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+        }
+    </style>
 </head>
 
 <body>
@@ -15,9 +61,11 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo">Гармония</div>
+                <div class="logo">Константин Тимохин</div>
                 <ul class="nav-links">
                     <li><a href="index.html">Главная</a></li>
+                    <li><a href="types.html">Виды массажа</a></li>
+                    <li><a href="training.html">Обучение</a></li>
                     <li><a href="services.html">Услуги</a></li>
                     <li><a href="prices.html">Цены</a></li>
                     <li><a href="contacts.html" class="active">Контакты</a></li>
@@ -26,67 +74,69 @@
         </div>
     </header>
 
-    <div class="intro">
-        <div class="container">
-            <h1>Контакты</h1>
-            <p>Свяжитесь со мной для записи или консультации</p>
-        </div>
-    </div>
+    <div class="container">
+        <section class="contact-layout">
 
-    <div class="container contact-layout">
+            <div class="contact-info">
+                <h1>Связаться со мной</h1>
+                <p style="margin-bottom: 2rem;">Я с радостью отвечу на любые вопросы или помогу записаться на сеанс.</p>
 
-        <div class="contact-info">
-            <div class="info-item">
-                <h3>Адрес</h3>
-                <p>г. Москва, ул. Лесная, д. 5, офис 203</p>
-                <p>(5 минут от м. Белорусская)</p>
-            </div>
-
-            <div class="info-item">
-                <h3>Телефон</h3>
-                <p><a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
-                <p>Звоните или пишите в WhatsApp/Telegram</p>
-            </div>
-
-            <div class="info-item">
-                <h3>Режим работы</h3>
-                <p>Ежедневно: 10:00 - 21:00</p>
-            </div>
-
-            <div class="socials">
-                <a href="#" class="social-link">Vk</a>
-                <a href="#" class="social-link">Tg</a>
-                <a href="#" class="social-link">In</a>
-            </div>
-        </div>
-
-        <div class="contact-form">
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="name">Ваше имя</label>
-                    <input type="text" id="name" name="name" placeholder="Иван" required>
+                <div class="info-item">
+                    <h3>Адрес</h3>
+                    <p>г. Алматы, ул. Зенкова 15</p>
                 </div>
 
-                <div class="form-group">
-                    <label for="phone">Ваш телефон</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+7 (900) 000-00-00" required>
+                <div class="info-item">
+                    <h3>Телефон</h3>
+                    <p><a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+                    <p>Позвоните или напишите в WhatsApp/Telegram</p>
                 </div>
 
-                <div class="form-group">
-                    <label for="message">Сообщение (желаемая дата и время)</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Хочу записаться на..."></textarea>
+                <div class="info-item">
+                    <h3>Часы работы</h3>
+                    <p>Ежедневно: 10:00 - 21:00</p>
                 </div>
+            </div>
 
-                <button type="submit" class="submit-btn">Отправить заявку</button>
-            </form>
-        </div>
+            <div class="contact-form-wrapper">
+                <h2>Отправить сообщение</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" placeholder="Имя" required>
+                    </div>
 
+                    <div class="form-group">
+                        <label for="phone">Номер телефона</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (900) 000-00-00" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Я хотел бы записаться на сеанс..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Отправить заявку</button>
+                </form>
+            </div>
+
+        </section>
+
+        <section class="map-section">
+            <h2>Как меня найти</h2>
+            <div class="map-container">
+                <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?q=г.+Алматы,+ул.+Зенкова+15&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                </iframe>
+            </div>
+        </section>
     </div>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Массажный кабинет "Гармония". Все права защищены.</p>
-            <p>Работаем ежедневно с 10:00 до 21:00</p>
+            <p>&copy; 2025 Константин Тимохин. Все права защищены.</p>
+            <p>Профессиональный Массаж и Телесная Терапия</p>
         </div>
     </footer>
 

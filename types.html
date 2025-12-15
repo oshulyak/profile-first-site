@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виды массажа - Константин Тимохин</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        .page-hero {
+            height: 50vh;
+            min-height: 400px;
+        }
+
+        .page-hero .container {
+            width: 100%;
+        }
+
+        .method-section {
+            padding: 4rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .method-section:last-child {
+            border-bottom: none;
+        }
+
+        .method-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .method-image {
+            background-color: var(--secondary-color);
+            height: 300px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            opacity: 0.8;
+            /* Placeholder for real image */
+        }
+
+        @media (max-width: 768px) {
+            .method-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Константин Тимохин</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="types.html" class="active">Виды массажа</a></li>
+                    <li><a href="training.html">Обучение</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="prices.html">Цены</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero page-hero">
+        <div class="container">
+            <div class="hero-content" style="text-align: center;">
+                <h1>Виды массажа и методики</h1>
+                <p>Комплексный подход к исцелению, включающий различные дисциплины.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <section class="method-section">
+            <div class="method-grid">
+                <div class="method-content">
+                    <h2>Остеопатия</h2>
+                    <p>Остеопатия — это целостный подход к здравоохранению, который подчеркивает важность
+                        костно-мышечной системы для здоровья и благополучия человека. Восстанавливая структурный баланс
+                        тела, мы стремимся стимулировать собственные механизмы исцеления организма.</p>
+                    <p>Включает техники: Краниосакральная терапия, Висцеральная манипуляция, Структурная остеопатия.</p>
+                </div>
+                <div class="method-image" style="background: #D7CCC8;"></div>
+            </div>
+        </section>
+
+        <section class="method-section">
+            <div class="method-grid">
+                <div class="method-image" style="background: #BCAAA4; order: -1;"></div> <!-- Order for alternation -->
+                <div class="method-content">
+                    <h2>Телесная терапия</h2>
+                    <p>Интегративная телесно-ориентированная терапия работает с психологическими и эмоциональными
+                        блоками, хранящимися в теле. Через мягкое прикосновение, работу с дыханием и движение мы
+                        освобождаем глубокое напряжение и восстанавливаем эмоциональное равновесие.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="method-section">
+            <div class="method-grid">
+                <div class="method-content">
+                    <h2>Кинезиология</h2>
+                    <p>Прикладная кинезиология использует мышечное тестирование для выявления дисбалансов в структурных,
+                        химических и эмоциональных энергетических системах тела. Это помогает диагностировать
+                        первопричину боли и подобрать эффективные методы коррекции.</p>
+                </div>
+                <div class="method-image" style="background: #A1887F;"></div>
+            </div>
+        </section>
+
+        <section class="method-section">
+            <div class="method-grid">
+                <div class="method-image" style="background: #8D6E63; order: -1;"></div>
+                <div class="method-content">
+                    <h2>Классический массаж</h2>
+                    <p>Основа мануальной терапии. Классический массаж улучшает кровообращение, расслабляет мышцы и
+                        способствует общему благополучию. Он эффективен для снятия стресса, управления болью и
+                        восстановления после физических нагрузок.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Константин Тимохин. Все права защищены.</p>
+            <p>Профессиональный Массаж и Телесная Терапия</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
